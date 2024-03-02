@@ -1,0 +1,51 @@
+:root {
+  --main-color: #ff477e;
+  --darkText: #49516f;
+  --white: #ffffff;
+}
+
+.Nav-bg {
+  background-color: var(--white);
+  position: fixed !important;
+  box-shadow: 10px 5px 5px var(--white) !important;
+  width: 100%;
+  z-index: 100;
+}
+.logo {
+  width: 40px;
+}
+.Nav-btn {
+  background-color: var(--main-color) !important;
+  color: var(--white) !important;
+  border-radius: 10px;
+  width: 80px;
+  text-align: center;
+  margin-left: 20px;
+  border: 1px solid var(--main-color) !important;
+  transition: 0.5s !important;
+}
+.Nav-btn:hover {
+  background-color: transparent !important;
+  color: var(--main-color) !important;
+}
+.title-logo {
+  font-family: "Ruwudu", serif;
+  font-weight: bold;
+}
+.link {
+  font-weight: 600 !important;
+  color: #49516f !important;
+  transition: 0.5s;
+}
+.link:hover {
+  color: var(--main-color) !important;
+}
+/* responsive area */
+
+@media only screen and (min-width: 991px) {
+  .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 250px !important;
+  }
+}

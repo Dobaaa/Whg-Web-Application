@@ -1,0 +1,265 @@
+:root {
+  --main-color: #ff477e;
+  --darkText: #49516f;
+  --white: #ffffff;
+}
+.landing {
+  background-color: #f4f4f4;
+  color: var(--darkText);
+  overflow: hidden;
+  background-image: url(../../Asests/image-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.head h2 i {
+  color: var(--main-color);
+}
+
+.scrol label,
+.scrol input {
+  transform: rotate(90deg);
+  transform: rotate(-0.25turn);
+}
+.scrol input {
+  border-style: none;
+  background-color: transparent;
+  border: 2px solid var(--darkText);
+  border-radius: 12px;
+  width: 70px;
+  color: #ff477e;
+  font-size: 20px;
+  text-align: end;
+}
+.scrol label {
+  color: #49516f !important;
+  font-size: 15px;
+}
+.info i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: var(--main-color);
+  width: 42px;
+  height: 42px;
+  background-color: var(--white);
+  border-radius: 6px;
+}
+.info span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.basket {
+  color: var(--darkText);
+  text-align: center;
+}
+.basket-btn {
+  background-color: var(--white) !important;
+  color: var(--darkText) !important;
+  border-style: none !important;
+  border-radius: 15px !important;
+}
+.basket-btn i {
+  color: rgb(68, 122, 223);
+  padding-right: 5px;
+}
+.red,
+.blue,
+.yellow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.red {
+  background-color: #ff477e;
+}
+.blue {
+  background-color: #49516f;
+}
+.yellow {
+  background-color: gold;
+}
+.circle {
+  background-color: #ffffff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.land-img {
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+}
+
+.popup i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(218 220 226);
+  color: var(--darkText);
+  font-size: 15px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.head-line i {
+  background-color: transparent;
+}
+.popup h6 {
+  font-size: 13px;
+  color: var(--darkText);
+}
+.popup p {
+  font-size: 15px;
+  line-height: 0%;
+}
+.basket-btn button {
+  border-style: none;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--main-color);
+  transition: 0.5s;
+}
+.basket-btn button:hover {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: var(--white);
+}
+.basket-btn a {
+  text-decoration: none;
+  color: var(--darkText);
+}
+
+.img-section {
+  position: relative;
+}
+.paly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--white);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.paly i {
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+.paly {
+  transition: opacity 0.5s ease;
+}
+
+.paly.hidden {
+  opacity: 0;
+  pointer-events: none; /* Disable pointer events while hidden */
+}
+
+.bar {
+  background-color: #f4f4f4;
+}
+.categ-btn {
+  background-color: white !important;
+  border-style: none !important;
+  color: var(--darkText) !important;
+  outline: none !important;
+  border: 1px solid var(--white) !important;
+
+  transition: 0.3s;
+}
+.categ-btn:hover {
+  border: 1px solid var(--main-color) !important;
+}
+.categ-btn i {
+  color: var(--main-color);
+}
+/* Cards area  */
+.cards {
+  background-color: #f4f4f4;
+}
+.box img {
+  width: 270px;
+  height: 270px;
+  border-radius: 14px;
+}
+
+.Card-icons {
+  color: gold;
+}
+
+.filter-btn button {
+  background-color: transparent;
+  border-style: none;
+  color: gray;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+.filter-btn button:hover,
+.filter-btn button:focus {
+  color: var(--darkText);
+  border-bottom: 2px solid var(--main-color);
+}
+
+/* footer area */
+
+.footer {
+  background-color: rgb(36, 33, 33);
+  color: white;
+}
+.img-footer {
+  width: 60px;
+}
+.footer-icons {
+  font-size: 25px;
+  color: gray;
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+}
+ul li a {
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.3s;
+}
+ul li a:hover {
+  color: var(--main-color);
+}
+
+.logo-foot {
+  font-family: "Ruwudu", serif;
+  font-weight: bold;
+}
+span a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  padding-left: 5px;
+}
+/*  responsive area */
+@media (min-width: 767px) and (max-width: 992px) {
+  .land-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .land-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+  }
+}
