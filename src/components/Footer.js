@@ -8,7 +8,6 @@ export default function Footerr() {
           <div className="col-md-6 d-flex    ">
             <div className="text-center d-flex  justify-content-center align-items-center ">
               <img src={logo} className="img-footer " />
-              <h3 className="logo-foot">وهج</h3>
             </div>
           </div>
           <div className="col-md-6 d-flex ">
@@ -56,10 +55,10 @@ export default function Footerr() {
           </div>
           <div className="col-md-6  footer-icons  gap-3 d-flex ">
             <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-apple"></i>
           </div>
         </div>
       </div>

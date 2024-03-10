@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap");
+
 :root {
   --main-color: #ff477e;
   --darkText: #49516f;
   --white: #ffffff;
+}
+
+body {
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .landing {
   background-color: #f4f4f4;
@@ -27,12 +33,12 @@
   border: 2px solid var(--darkText);
   border-radius: 12px;
   width: 70px;
-  color: #ff477e;
+  color: var(--main-color);
   font-size: 20px;
   text-align: end;
 }
 .scrol label {
-  color: #49516f !important;
+  color: var(--darkText) !important;
   font-size: 15px;
 }
 .info i {
@@ -77,10 +83,10 @@
   cursor: pointer;
 }
 .red {
-  background-color: #ff477e;
+  background-color: var(--main-color);
 }
 .blue {
-  background-color: #49516f;
+  background-color: var(--darkText);
 }
 .yellow {
   background-color: gold;
@@ -142,6 +148,7 @@
 .img-section {
   position: relative;
 }
+
 .paly {
   position: absolute;
   top: 50%;
@@ -188,10 +195,27 @@
 .cards {
   background-color: #f4f4f4;
 }
+.pro-link {
+  text-decoration: none;
+}
+.box {
+  background-color: var(--white);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box-desc {
+  padding: 10px;
+}
+.box-desc h5 {
+  color: #ff477e;
+}
+.box-desc p {
+  color: var(--darkText);
+}
 .box img {
   width: 270px;
   height: 270px;
-  border-radius: 14px;
+  border-radius: 12px 12px 0px 0px;
 }
 
 .Card-icons {
@@ -218,7 +242,8 @@
   color: white;
 }
 .img-footer {
-  width: 60px;
+  width: 100px;
+  margin-left: 80px;
 }
 .footer-icons {
   font-size: 25px;

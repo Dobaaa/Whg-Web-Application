@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Data from "../Data";
+import { Link } from "react-router-dom";
 
 export default function Card() {
   const categories = [...new Set(Data.map((item) => item.category))]; // Get unique categories
@@ -22,32 +23,44 @@ export default function Card() {
       return null;
     }
     return (
-      <div key={category} className="">
-        <h2 className="d-flex   col-sm justify-content-center justify-content-md-end ">
-          {category}
-        </h2>
-        <div className="row  ">
-          {categoryData.map((item) => (
-            <div
-              className="col-md-6 col-lg-4 col-xl-3 c d-flex col-sm justify-content-center"
-              key={item.title}
-            >
-              <div className="box mt-5 ">
-                <img src={item.img} alt={item.title} />
-                <div className="Card-icons d-flex pt-2">
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                </div>
-                <h5>{item.title}</h5>
-                <p>{item.Adress}</p>
+      <>
+        <div key={category}>
+          <h2 className="d-flex   col-sm justify-content-center justify-content-md-end ">
+            {category}
+          </h2>
+          <div className="row  pb-5">
+            {categoryData.map((item) => (
+              <div
+                to={`/Card/${item.id}`}
+                className="col-md-6 col-lg-4 col-xl-3 c d-flex col-sm justify-content-center"
+                key={item.id}
+              >
+                <Link
+                  to={`/Card/${item.id}`}
+                  key={item.id}
+                  className="pro-link"
+                >
+                  <div className="box mt-5  d-flex flex-column ">
+                    <img src={item.img} alt={item.title} />
+                    <div className="box-desc text-end">
+                      <div className="Card-icons d-flex pt-2 justify-content-end pb-3">
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                        <i className="fa-solid fa-star"></i>
+                      </div>
+
+                      <h5>{item.title}</h5>
+                      <p>{item.Adress}</p>
+                    </div>
+                  </div>
+                </Link>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </>
     );
   });
 

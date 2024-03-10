@@ -11,7 +11,6 @@ function Navs() {
       <Container className="container">
         <Navbar.Brand href="#home" className="title-logo">
           <img src={Logo} className="logo" />
-          وَهَجٌ
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav " />
         <Navbar.Collapse id="responsive-navbar-nav">

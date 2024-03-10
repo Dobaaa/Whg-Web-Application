@@ -40,7 +40,7 @@ export default function Landing() {
       <div className="landing pb-5  col-sm pt-5 ">
         <div className=" container d-flex  justify-content-center pt-5 ">
           <div className="row d-flex   align-items-center">
-            <div className="col-md-7 ">
+            <div className="col-md-7  d-flex flex-column  justify-content-center align-items-center  align-items-md-start">
               <div className="head">
                 <h2>
                   When your <i className="fa-solid fa-heart"></i>
@@ -51,28 +51,31 @@ export default function Landing() {
                 “ Once in a while, right in the middle of an <br />
                 ordinary life, love gives us a fairy tale. ”
               </p>
-              <Search />
-              <div className="row info pt-4 pb-4">
-                <div className="col-md-6 d-flex align-items-center gap-2 col-sm pb-2">
+              <div className="  d-flex   ">
+                <Search />
+              </div>
+
+              <div className="row info pt-4 pb-4 ">
+                <div className="col-md-6 d-flex align-items-center justify-content-center  justify-content-md-start gap-2 col-sm pb-2">
                   <i className="fa-solid fa-swatchbook"></i>
                   <span>Invitation Design</span>
                 </div>
-                <div className="col-md-6  d-flex align-items-center gap-2">
+                <div className="col-md-6  d-flex align-items-center justify-content-center  justify-content-md-start  gap-2">
                   <i className="fa-solid fa-utensils"></i>
                   <span>Cakes and Catering</span>
                 </div>
               </div>
-              <div className="row info ">
-                <div className="col-md-6  d-flex align-items-center gap-2 col-sm pb-2">
+              <div className="row info  ">
+                <div className="col-md-6  d-flex align-items-center justify-content-center   justify-content-md-start gap-2 col-sm pb-2">
                   <i className="fa-solid fa-cloud-bolt"></i>
                   <span>Rain Charmer</span>
                 </div>
-                <div className="col-md-6  d-flex align-items-center gap-2">
+                <div className="col-md-6  d-flex align-items-center justify-content-center  justify-content-md-start gap-2 ps-4">
                   <i className="fa-solid fa-tablet-screen-button"></i>
                   <span>Other services</span>
                 </div>
               </div>
-              <div className="row pt-5">
+              <div className="row pt-5 pb-5">
                 <div className="col-md-12">
                   <div className="scrol pt-5">
                     <label htmlFor="scrol">Scroll Down</label>
@@ -82,7 +85,7 @@ export default function Landing() {
               </div>
             </div>
             <div className="col-md-5 ">
-              <div className="img-section d-flex justify-content-end">
+              <div className="img-section d-flex justify-content-center justify-content-md-end">
                 <img src={landing} className="land-img" id="mainPhoto" />
                 <div
                   onClick={handleClick}
@@ -93,7 +96,7 @@ export default function Landing() {
                   <i className="fa-solid fa-play"></i>
                 </div>
               </div>
-              <div className="slide-color d-flex gap-3 justify-content-end pt-3 pb-3">
+              <div className="slide-color d-flex gap-3 justify-content-center justify-content-md-end pt-3 pb-3">
                 <div className="red">
                   <div className="circle"></div>
                 </div>
@@ -104,7 +107,7 @@ export default function Landing() {
                   <div className="circle"></div>
                 </div>
               </div>
-              <div className="basket pt-2 d-flex  justify-content-end ">
+              <div className="basket pt-2 d-flex  justify-content-center justify-content-md-end ">
                 <>
                   <Button
                     variant="danger"
